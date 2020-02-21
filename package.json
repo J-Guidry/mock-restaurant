@@ -1,0 +1,19 @@
+{
+  "name": "luto-colorlib-recoded",
+  "version": "1.0.0",
+  "description": "Recoded from scratch restaurant web template ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-Guidry/luto-colorlib-recoded.git"
+  },
+  "author": "Jhabari Guidry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J-Guidry/luto-colorlib-recoded/issues"
+  },
+  "homepage": "https://github.com/J-Guidry/luto-colorlib-recoded#readme"
+}
