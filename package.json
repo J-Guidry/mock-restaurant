@@ -4,7 +4,8 @@
   "description": "Recoded from scratch restaurant web template ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pug": "pug -w  ./src -o ./dist -P",
+    "rollup": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
     "@rollup/plugin-node-resolve": "^7.1.1",
     "pug": "^2.0.4",
     "rollup": "^1.31.1"
+  },
+  "dependencies": {
+    "pikaday": "^1.8.0",
+    "tiny-slider": "^2.9.2"
   }
 }
