@@ -1,8 +1,8 @@
 doctype html
 html
-	include _head.pug
+	include partials/_head.pug
 	body
-		include _header.pug
+		include partials/_header.pug
 		main
 			section.banner
 				div.slider
@@ -55,6 +55,11 @@ html
 				div.about-imgs
 					img.about-img(src="images/about.jpg")
 					img.about-img2(src="images/about-2.jpg") 
+			section.video
+				div.video-text
+					h2 Foods you love to Taste
+					p Duis magna dolor elit in ut amet elit ad nulla quis incididunt nostrud aute anim. Ullamco elit non ullamco quis pariatur occaecat voluptate exercitation eiusmod ea est. Minim cupidatat excepteur fugiat excepteur eu sint consequat aliquip pariatur aliquip id. Fugiat in nisi adipisicing id magna et. Fugiat laboris Lorem id amet. Quis velit officia laborum elit eiusmod excepteur tempor. Laborum eiusmod exercitation ipsum minim aliquip reprehenderit id.
+					a.outline-btn(href="//player.vimeo.com/video/93951774?autoplay=1" data-lightbox) Watch Video
 			section.specialties
 				h2 Our Specialities
 				p Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life
@@ -357,4 +362,22 @@ html
 									span.dish-price $2.99
 				p Even the all-powerful Pointing has no control about the blind texts it is an almost
 				a.book-btn(href="#") Book a Table
-	include _footer.pug
+			section.reservation
+				div.reservation-content
+					h2 Make a reservation
+					p Cillum non enim eiusmod sint cupidatat enim. Sunt duis officia officia id dolore aliquip. Officia tempor veniam sunt veniam voluptate nostrud. Consectetur ex labore ut commodo eu fugiat. Culpa consectetur excepteur velit fugiat mollit nulla occaecat sit sit pariatur. Id et dolore incididunt officia esse enim enim deserunt fugiat. Ad cupidatat reprehenderit non enim mollit non dolor Lorem consectetur irure commodo consequat fugiat.
+					form(action="#" class="form")
+						label#name Fullname
+						input#name(placeholder="name" type="text")
+						label Phone
+						input(placeholder="phone" type="tel")
+						label Time
+						input(placeholder="6:30" type="time")
+						label Email
+						input(placeholder="email" type="email")
+						label Date
+						input#datepicker(placeholder="date" type="text")
+						label Amount of People
+						input(placeholder="1" type="number")
+						button Book a Table
+		include partials/_footer.pug
