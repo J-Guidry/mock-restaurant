@@ -6,6 +6,7 @@ body {
   color: #7d7d7d;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,6 +26,11 @@ img {
 a {
   text-decoration: none;
   color: unset;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
 }
 
 .banner-heading {
@@ -65,8 +71,13 @@ a {
 
 .banner-p {
   font-family: "Lora", Georgia, serif;
-  font-size: 21px;
+  font-size: 19px;
   margin-bottom: 35px;
+}
+
+.header {
+  position: relative;
+  z-index: 2;
 }
 
 .header-row {
@@ -74,7 +85,7 @@ a {
   top: 0;
   right: 0;
   left: 0;
-  width: 65%;
+  width: 80%;
   margin: 20px auto;
   z-index: 2;
 }
@@ -110,6 +121,12 @@ a {
   background-color: unset;
   float: right;
   cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.toggle-height {
+  margin-top: 10px;
 }
 
 .burger-bar {
@@ -119,8 +136,80 @@ a {
   margin: 5px;
 }
 
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.turn-cross-1 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 9.5px;
+  position: relative;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.turn-cross-3 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: 12px;
+  position: relative;
+}
+
+@media screen and (min-width: 800px) {
+  .header-row {
+    width: 65%;
+  }
+}
+
 .nav-menu {
   display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 6rem 20px 20px 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.nav-active {
+  display: block;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+}
+
+.nav-link {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-list {
+    font-size: 30px;
+  }
 }
 
 .banner {
@@ -135,7 +224,7 @@ a {
 
 .slider {
   width: 90%;
-  padding-top: 200px;
+  padding-top: 150px;
   margin: auto;
   z-index: 1;
   position: relative;
@@ -157,7 +246,7 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(25, 25, 25, 0.4);
+  background-color: rgba(25, 25, 25, 0.5);
   z-index: 0;
   min-height: 750px;
 }

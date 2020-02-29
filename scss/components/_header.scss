@@ -1,16 +1,20 @@
+.header {
+  position: relative;
+  z-index: 2;
+}
+
 .header-row {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  width: 65%;
+  width: 80%;
   margin: 20px auto;
   z-index: 2;
 }
 
 .logo {
   background-color: black;
-  //font-size: 35px;
   position: relative;
   padding: 7px 7px 7px 58px;
   letter-spacing: 5px;
@@ -40,6 +44,12 @@
   background-color: unset;
   float: right;
   cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.toggle-height {
+  margin-top: 10px;
 }
 
 .burger-bar {
@@ -47,4 +57,34 @@
   height: 6px;
   background-color: white;
   margin: 5px;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.turn-cross-1 {
+  transform: rotate(-45deg);
+  top: 9.5px;
+  position: relative;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.turn-cross-3 {
+  transform: rotate(45deg);
+  bottom: 12px;
+  position: relative;
+}
+
+@media screen and (min-width: 800px) {
+  .header-row {
+    width: 65%;
+  }
 }

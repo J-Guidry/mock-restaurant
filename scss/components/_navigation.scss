@@ -1,4 +1,38 @@
 .nav-menu {
   display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 6rem 20px 20px 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
+.nav-active {
+  display: block;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+}
+
+.nav-link {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-list {
+    font-size: 30px;
+  }
+}
