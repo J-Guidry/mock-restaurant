@@ -1,0 +1,52 @@
+.info {
+  background-color: $info;
+  padding: 1rem;
+  text-align: center;
+}
+
+.info div {
+  margin-bottom: 25px;
+}
+
+.about {
+  margin: 30px 30px;
+}
+
+@media screen and (min-width: 800px) {
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+}
+
+@media screen and (min-width: 950px) {
+
+  .about {
+    display: flex;
+    margin: 1rem 2rem;
+  }
+
+  .about-text {
+    width: 50%;
+  }
+
+  .about-imgs {
+    width: 50%;
+  }
+
+  .about-imgs div {
+    display: inline-block;
+    width: 48%;
+  }
+
+  .about-imgs div:first-child {
+    margin-right: 10px;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+}
