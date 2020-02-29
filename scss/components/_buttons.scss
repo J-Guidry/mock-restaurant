@@ -1,0 +1,29 @@
+.primary-button {
+  padding: 20px 45px;
+  background-color: $primary;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.tns-nav button {
+  margin-right: 15px;
+  border-radius: 30px;
+  position: relative;
+  border: none;
+  color: white;
+  width: 15px;
+  height: 15px;
+}
+
+.tns-nav button:after {
+  position: absolute;
+  content: "";
+  border: 1px solid white;
+  border-radius: 50%;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+}

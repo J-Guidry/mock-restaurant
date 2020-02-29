@@ -11,7 +11,6 @@ const banner = tns({
   controls: false,
   autoplayButtonOutput: false,
   navPosition: "bottom"
-
 });
 
 const testimonies = tns({

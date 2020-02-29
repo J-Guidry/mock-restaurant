@@ -1,13 +1,3 @@
-header
-  div.header-row
-      a.logo
-          i.flaticon-cutlery
-          span Lu
-          span To
-      button.nav-toggle(aria-expanded="false" aria-controls="header-nav")
-          div.burger-bar
-          div.burger-bar
-          div.burger-bar
 div.nav-menu
   ul(role="menubar" aria-hidden="true")
     li(role="menuitem")
@@ -24,3 +14,15 @@ div.nav-menu
         a(href="#") About us
     li(role="menuitem")
         a(href="#") Contact
+header.header
+
+  section.header-row
+    a.logo
+      i.flaticon-cutlery(class="logo-icon")
+      span.letter-block Lu
+      span.letter-block To
+    button.nav-toggle(aria-expanded="false" aria-controls="header-nav")
+      div.burger-bar
+      div.burger-bar
+      div.burger-bar
+  

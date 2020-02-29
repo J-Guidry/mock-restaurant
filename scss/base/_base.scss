@@ -1,0 +1,40 @@
+$primary: #FF6107;
+$black: #303030;
+$darker: #404044;
+$lighter: #FBFBFB;
+$selection-color: #FF6107;
+$body-color: #fcfcfc;
+$body-bg: #f9f7f7;
+$gray: #7d7d7d;
+
+$font-primary: 'Poppins', Arial, sans-serif;
+$font-secondary: 'Lora', Georgia, serif;
+
+body {
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: $lighter;
+  color: $gray;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-secondary;
+}
+
+p, span {
+  font-family: $font-primary;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}

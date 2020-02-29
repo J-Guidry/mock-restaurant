@@ -1870,7 +1870,7 @@
         events.emit('indexChanged', info());
         needContainerTransform = true;
       } else if (itemsChanged) {
-        if (!indChanged) { additionalUpdates(); }
+        if (!indChanged) { additionalUpdates();}
       } else if (fixedWidth || autoWidth) {
         doLazyLoad(); 
         updateSlideStatus();
@@ -2229,6 +2229,26 @@
       }
     }
 
+    function changeBgImage () {
+      let slides = Array.from(document.querySelector(".slider").children);
+      let banner = document.querySelector(".banner");
+      const bgArray = [
+        'url(images/img_bg_1.jpg)',
+        'url(images/img_bg_2.jpg)',
+        'url(images/img_bg_3.jpg)',
+        'url(images/img_bg_4.jpg)'
+      ];
+      slides.forEach(slide => {
+        let active = slide.classList.contains("tns-slide-active");
+        if (active === true) {
+          let id;
+          id = slide === slides[slides.length - 1] ? 0 : parseInt(slide.id.charAt(slide.id.length -1));
+          let bgImg = bgArray[id];
+          banner.style.backgroundImage = bgImg;
+        } 
+      });
+    }
+
     function onImgLoaded (e) {
       imgLoaded(getTarget(e));
     }
@@ -2292,6 +2312,7 @@
       updateLiveRegion();
       updateControlsStatus();
       updateNavStatus();
+      changeBgImage();
     }
 
 
@@ -9043,7 +9064,6 @@
     controls: false,
     autoplayButtonOutput: false,
     navPosition: "bottom"
-
   });
 
   const testimonies = tns({

@@ -1,0 +1,50 @@
+.header-row {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 65%;
+  margin: 20px auto;
+  z-index: 2;
+}
+
+.logo {
+  background-color: black;
+  //font-size: 35px;
+  position: relative;
+  padding: 7px 7px 7px 58px;
+  letter-spacing: 5px;
+  text-align: center;
+  width: 26px;
+  font-weight: 400;
+  display: block;
+  float: left;
+}
+
+.logo-icon {
+  font-size: 3rem;
+  color: $primary;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+}
+
+.letter-block {
+  display: block;
+  color: white;
+  font-size: 20px;
+}
+
+.nav-toggle {
+  border: none;
+  background-color: unset;
+  float: right;
+  cursor: pointer;
+}
+
+.burger-bar {
+  width: 30px;
+  height: 6px;
+  background-color: white;
+  margin: 5px;
+}
