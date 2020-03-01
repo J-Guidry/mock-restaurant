@@ -1,0 +1,23 @@
+.testimonies {
+  height: 600px;
+  background: url(../images/cover_bg_2.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.client-slider {
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (min-width: 950px) {
+  .client-slider {
+    width: 60%;
+  }
+}

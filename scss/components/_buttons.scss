@@ -28,6 +28,14 @@
   right: -5px;
 }
 
+.tns-outer .tns-nav-active {
+  background-color: $primary;
+}
+
+.tns-outer .tns-nav-active:after {
+  border: 1px solid $primary;
+}
+
 .outline-btn {
   padding: 10px 24px;
   background-color: white;

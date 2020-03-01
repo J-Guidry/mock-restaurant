@@ -79,6 +79,17 @@ ul {
   margin-top: 10px;
 }
 
+.testimony-heading {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 10px;
+  color: white;
+  position: relative;
+  z-index: 2;
+  padding-top: 7rem;
+}
+
 @media screen and (min-width: 800px) {
   .banner-heading {
     font-size: 3rem;
@@ -113,6 +124,14 @@ ul {
   bottom: -5px;
   left: -5px;
   right: -5px;
+}
+
+.tns-outer .tns-nav-active {
+  background-color: #FF6107;
+}
+
+.tns-outer .tns-nav-active:after {
+  border: 1px solid #FF6107;
 }
 
 .outline-btn {
@@ -324,6 +343,77 @@ ul {
   min-height: 750px;
 }
 
+.info {
+  background-color: #302939;
+  padding: 1rem 1rem 20px 1rem;
+  text-align: center;
+}
+
+.info div {
+  margin-bottom: 25px;
+}
+
+.about {
+  margin: 30px 30px;
+}
+
+.about1 {
+  background: url(../images/about.jpg) no-repeat center center;
+  background-size: cover;
+  height: 380px;
+  margin-bottom: 20px;
+}
+
+.about2 {
+  background: url(../images/about-2.jpg) no-repeat center center;
+  background-size: cover;
+  height: 700px;
+}
+
+@media screen and (min-width: 800px) {
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem auto;
+  }
+  .about-text {
+    width: 35%;
+  }
+  .about-imgs {
+    width: 50%;
+  }
+  .about-imgs div {
+    display: inline-block;
+    width: 48%;
+  }
+  .about-imgs div:first-child {
+    margin-right: 10px;
+  }
+  .about-img {
+    width: 100%;
+  }
+  .about1, .about2 {
+    height: 320px;
+  }
+}
+
 .specialties {
   text-align: center;
   margin: 30px 30px;
@@ -400,7 +490,7 @@ ul {
   bottom: 0;
   left: 0;
   background-color: #303030;
-  opacity: .4;
+  opacity: .7;
 }
 
 @media screen and (min-width: 950px) {
@@ -415,74 +505,27 @@ ul {
   }
 }
 
-.info {
-  background-color: #302939;
-  padding: 1rem 1rem 20px 1rem;
+.testimonies {
+  height: 600px;
+  background: url(../images/cover_bg_2.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  color: white;
   text-align: center;
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.info div {
-  margin-bottom: 25px;
-}
-
-.about {
-  margin: 30px 30px;
-}
-
-.about1 {
-  background: url(../images/about.jpg) no-repeat center center;
-  background-size: cover;
-  height: 380px;
-  margin-bottom: 20px;
-}
-
-.about2 {
-  background: url(../images/about-2.jpg) no-repeat center center;
-  background-size: cover;
-  height: 700px;
-}
-
-@media screen and (min-width: 800px) {
-  .info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
+.client-slider {
+  width: 80%;
+  margin: auto;
 }
 
 @media screen and (min-width: 950px) {
-  .about {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 80%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 1rem auto;
-  }
-  .about-text {
-    width: 35%;
-  }
-  .about-imgs {
-    width: 50%;
-  }
-  .about-imgs div {
-    display: inline-block;
-    width: 48%;
-  }
-  .about-imgs div:first-child {
-    margin-right: 10px;
-  }
-  .about-img {
-    width: 100%;
-  }
-  .about1, .about2 {
-    height: 320px;
+  .client-slider {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=style.css.map */
