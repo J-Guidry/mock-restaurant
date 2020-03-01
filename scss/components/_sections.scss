@@ -1,6 +1,6 @@
 .info {
   background-color: $info;
-  padding: 1rem;
+  padding: 1rem 1rem 20px 1rem;
   text-align: center;
 }
 
@@ -12,24 +12,37 @@
   margin: 30px 30px;
 }
 
+.about1 {
+  background: url(../images/about.jpg) no-repeat center center;
+  background-size: cover;
+  height: 380px;
+  margin-bottom: 20px;
+}
+
+.about2 {
+  background: url(../images/about-2.jpg) no-repeat center center;
+  background-size: cover;    
+  height: 700px;
+}
+
 @media screen and (min-width: 800px) {
   .info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-
 }
 
 @media screen and (min-width: 950px) {
-
   .about {
     display: flex;
-    margin: 1rem 2rem;
+    width: 80%;
+    justify-content: center;
+    margin: 1rem auto;
   }
 
   .about-text {
-    width: 50%;
+    width: 35%;
   }
 
   .about-imgs {
@@ -49,4 +62,7 @@
     width: 100%;
   }
 
+  .about1, .about2 {
+    height: 320px;
+  }
 }

@@ -1,0 +1,40 @@
+.specialties {
+  text-align: center;
+  margin: 30px 30px;
+  position: relative;
+}
+
+.specialty-dish {
+  position: relative;
+  bottom: 60px;
+  z-index: -1;
+  margin: 0;
+}
+
+.specialty {
+  margin-bottom: 20px;
+}
+
+.specialty:hover .specialty-dish{
+  top: 5px;
+}
+
+@media screen and (min-width: 950px) {
+  .specialty-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .specialty-img {
+    height: 450px;
+  }
+
+  .specialty {
+    margin-right: 20px;
+  }
+
+  .specialty-img img{
+    height: 100%;
+  }
+
+}

@@ -28,6 +28,22 @@
   right: -5px;
 }
 
+.outline-btn {
+  padding: 10px 24px;
+  background-color: white;
+  border: $primary solid 1px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: $primary;
+}
+
+.video-btn {
+  position: relative;
+  z-index: 1;
+}
+
 @media screen and (min-width: 800px) {
   .primary-button {
     padding: 20px 45px;
