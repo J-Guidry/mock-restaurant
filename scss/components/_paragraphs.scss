@@ -11,3 +11,20 @@
 .specialty-dish {
   font-size: 22px;
 }
+
+.menu-p {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.dish-info p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 950px) {
+  .menu-p {
+    width: 60%;
+    margin: auto;
+  }
+}

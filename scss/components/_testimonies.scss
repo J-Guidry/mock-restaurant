@@ -16,8 +16,18 @@
   margin: auto;
 }
 
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .testimonies {
+    padding-bottom: 10rem;
+  }
+}
+
 @media screen and (min-width: 950px) {
   .client-slider {
     width: 60%;
+  }
+
+  .testimonies {
+    padding-bottom: 3rem;
   }
 }

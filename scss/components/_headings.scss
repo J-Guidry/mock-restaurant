@@ -3,6 +3,7 @@
   font-family: $font-secondary;
   font-weight: 400;
   color: white;
+  margin-top: 0;
 }
 
 .info-heading {
@@ -39,6 +40,10 @@
   position: relative;
   z-index: 2;
   padding-top: 7rem;
+}
+
+.menu h3 {
+  margin: 0;
 }
 
 @media screen and (min-width: 800px) {
