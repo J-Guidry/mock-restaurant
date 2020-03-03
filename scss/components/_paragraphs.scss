@@ -22,9 +22,17 @@
   margin-top: 0;
 }
 
+.latest-post p {
+  color: $lighter;
+}
+
 @media screen and (min-width: 950px) {
   .menu-p {
     width: 60%;
-    margin: auto;
+    margin: 10px auto;
+  }
+
+  .news-p {
+    width: 60%;
   }
 }

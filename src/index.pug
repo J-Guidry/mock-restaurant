@@ -218,8 +218,7 @@ html
 								div.dish-info
 									span.dish-price $20.50
 									h3 Sunny sideup egg
-									p Crab / Potatos / Rice
-									
+									p Crab / Potatos / Rice		
 					section(role="tabpanel" class="panel" id="desserts" aria-hidden="false" aria-labelledby="tab2")
 						ul.menu-row
 							li
@@ -329,8 +328,7 @@ html
 								div.dish-info
 									span.dish-price $25.50
 									h3 King Sweet
-									p Crab / Potatos / Rice
-									
+									p Crab / Potatos / Rice			
 					section(role="tabpanel" class="panel" id="drinks" aria-hidden="false" aria-labelledby="tab3")
 						ul.menu-row
 							li
@@ -440,26 +438,29 @@ html
 								div.dish-info
 									span.dish-price $2.99
 									h3 Choco Juice
-									p Crab / Potatos / Rice
-									
+									p Crab / Potatos / Rice				
+				
 				p.menu-p Even the all-powerful Pointing has no control about the blind texts it is an almost
 				a.outline-btn(href="#") Book a Table
 			section.reservation(class="animated fadeIn")
+				div.dark-bg-video
 				div.reservation-content
-					h2 Make a reservation
+					h2.reservation-heading Make a Reservation
 					p Cillum non enim eiusmod sint cupidatat enim. Sunt duis officia officia id dolore aliquip. Officia tempor veniam sunt veniam voluptate nostrud. Consectetur ex labore ut commodo eu fugiat. Culpa consectetur excepteur velit fugiat mollit nulla occaecat sit sit pariatur. Id et dolore incididunt officia esse enim enim deserunt fugiat. Ad cupidatat reprehenderit non enim mollit non dolor Lorem consectetur irure commodo consequat fugiat.
 					form(action="#" class="form")
-						label#name Fullname
-						input#name(placeholder="name" type="text")
-						label Phone
-						input(placeholder="phone" type="tel")
-						label Time
-						input(placeholder="6:30" type="time")
-						label Email
-						input(placeholder="email" type="email")
-						label Date
-						input#datepicker(placeholder="date" type="text")
-						label Amount of People
-						input(placeholder="1" type="number")
-						button Book a Table
+						div.form-column
+							label(for="name") Fullname
+							input#name(placeholder="name" type="text")
+							label(for="tel") Phone
+							input(id="tel" placeholder="phone" type="tel")
+							label(for="time") Time
+							input(id="time" placeholder="6:30" type="time")
+						div.form-column
+							label Email
+							input(id="email" placeholder="email" type="email")
+							label Date
+							input(placeholder="date" type="text" id="datepicker")
+							label Amount of People
+							input(id="number-input" placeholder="1" type="number")
+						button.form-btn Book a Table
 		include partials/_footer.pug
