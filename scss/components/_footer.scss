@@ -1,6 +1,7 @@
 footer {
   background-color: $black;
   padding-bottom: 10px;
+  margin-top: 40px;
 }
 
 .footer-sections {
@@ -95,10 +96,11 @@ footer {
 .copyright a {
   color: $primary;
 }
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 1160px) {
   .footer-sections {
     flex-direction: row;
     justify-content: center;
+    width: 70%;
   }
   .footer-sections section{
     margin-right: 20px;
@@ -108,7 +110,7 @@ footer {
   }
 
   .footer-latest {
-    width: 40%;
+    width: 60%;
   }
 
   .footer-instagram {

@@ -2229,26 +2229,6 @@
       }
     }
 
-    function changeBgImage () {
-      let slides = Array.from(document.querySelector(".slider").children);
-      let banner = document.querySelector(".banner");
-      const bgArray = [
-        'url(images/img_bg_1.jpg)',
-        'url(images/img_bg_2.jpg)',
-        'url(images/img_bg_3.jpg)',
-        'url(images/img_bg_4.jpg)'
-      ];
-      slides.forEach(slide => {
-        let active = slide.classList.contains("tns-slide-active");
-        if (active === true) {
-          let id;
-          id = slide === slides[slides.length - 1] ? 0 : parseInt(slide.id.charAt(slide.id.length -1));
-          let bgImg = bgArray[id];
-          banner.style.backgroundImage = bgImg;
-        } 
-      });
-    }
-
     function onImgLoaded (e) {
       imgLoaded(getTarget(e));
     }
@@ -2312,7 +2292,7 @@
       updateLiveRegion();
       updateControlsStatus();
       updateNavStatus();
-      changeBgImage();
+      
     }
 
 
@@ -9061,7 +9041,8 @@
   const tabs = tablinks.querySelectorAll("a");
   const panels = document.querySelectorAll(".panel");
 
-  const banner = tns({
+
+  const bannerSlide = tns({
     container: '.slider',
     mode: "gallery",
     axis: "vertical",
@@ -9073,7 +9054,7 @@
     navPosition: "bottom"
   });
 
-  const testimonies = tns({
+  const clientSlide = tns({
     container: '.client-slider',
     mode: "gallery",
     axis: "vertical",
@@ -9086,10 +9067,31 @@
 
   });
 
-  var picker = new pikaday({ 
-    field: document.getElementById('datepicker') ,
-    format: 'MMM D YYYY',
-  });
+  //console.log(bannerSlide.events);
+
+  function changeBgImage () {
+    let slides = Array.from(document.querySelector(".slider").children);
+    let banner = document.querySelector(".banner");
+    const bgArray = [
+      'url(images/img_bg_1.jpg)',
+      'url(images/img_bg_2.jpg)',
+      'url(images/img_bg_3.jpg)',
+      'url(images/img_bg_4.jpg)'
+    ];
+    slides.forEach(slide => {
+      let active = slide.classList.contains("tns-slide-active");
+      if (active === true) {
+        let id;
+        id = slide === slides[slides.length - 1] ? 0 : parseInt(slide.id.charAt(slide.id.length -1));
+        let bgImg = bgArray[id];
+        banner.style.backgroundImage = bgImg;
+      } 
+    });
+  }
+
+  bannerSlide.events.on("indexChanged", changeBgImage);
+  //bannerSlide.events.emit("changeBG", bannerSlide.getInfo());
+  //console.log(bannerSlide.events);
 
   function toggleNav() {
     headerNav.classList.toggle("nav-active");
@@ -9149,6 +9151,11 @@
         }
     });
 
+  });
+
+  var picker = new pikaday({ 
+    field: document.getElementById('datepicker') ,
+    format: 'MMM D YYYY',
   });
 
   mobileToggle.addEventListener("click", toggleNav);

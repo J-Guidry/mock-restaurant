@@ -4,7 +4,7 @@
   "description": "Recoded from scratch restaurant web template ",
   "main": "index.js",
   "scripts": {
-    "pug": "pug -w ./src -p index.html -o ./dist -P",
+    "pug": "pug -w ./src -o ./dist -P",
     "rollup": "rollup -c"
   },
   "repository": {
@@ -12,7 +12,6 @@
     "url": "git+https://github.com/J-Guidry/luto-colorlib-recoded.git"
   },
   "author": "Jhabari Guidry",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/J-Guidry/luto-colorlib-recoded/issues"
   },
@@ -21,7 +20,8 @@
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "pug": "^2.0.4",
-    "rollup": "^1.31.1"
+    "rollup": "^1.31.1",
+    "acorn": ">=5.7.4"
   },
   "dependencies": {
     "moment": "^2.24.0",
