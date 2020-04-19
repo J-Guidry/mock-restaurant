@@ -7,26 +7,76 @@
 .specialty-dish {
   position: relative;
   bottom: 60px;
-  z-index: -1;
+  z-index: -2;
   margin: 0;
 }
 
 .specialty {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .specialty:hover .specialty-dish{
   top: 5px;
 }
 
+.specialty:hover .s-icons{
+  opacity: 1;
+}
+
+.price-tag {
+  color: #eeeeee;
+  background-color: $primary;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  left: 3%;
+}
+
+.s-icons {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  right: 40%;
+  opacity: 0;
+}
+
+.s-icon {
+  background-color: rgba(1,1,1, 0.6);
+  padding: 10px;
+  margin-right: 5px;
+  color: white;
+}
+
 @media screen and (min-width: 950px) {
   .specialty-group {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
   }
 
   .specialty-img {
-    height: 450px;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    z-index: -1;
+  }
+
+  .specialty-img::after {
+    display: block;
+    content: '';
+    padding-bottom: 56.25%;
+  }
+
+  .specialty-img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .specialty {
