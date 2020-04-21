@@ -1,4 +1,4 @@
-import { tns } from "../node_modules/tiny-slider/src/tiny-slider.js";
+import { tns } from "tiny-slider";
 import Pikaday from "pikaday";
 const mobileToggle = document.querySelector(".nav-toggle");
 const headerNav = document.querySelector(".nav-menu");

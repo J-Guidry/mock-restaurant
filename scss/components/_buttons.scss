@@ -66,10 +66,23 @@
   width: 100%;
 }
 
+.form-btn-solo {
+  padding: 10px 24px;
+  background-color: $primary;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  border: none;
+  color: white;
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
 @media screen and (min-width: 800px) {
   .primary-button {
     padding: 20px 45px;
-    //font-size: 18px;
   }
 
   .form-btn {

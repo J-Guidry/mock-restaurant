@@ -4,7 +4,7 @@
   "description": "Recoded from scratch restaurant web template ",
   "main": "index.js",
   "scripts": {
-    "pug": "pug -w ./src -o ./dist -P",
+    "pug": "pug -w ./src/pages -o ./dist -P",
     "rollup": "rollup -c"
   },
   "repository": {

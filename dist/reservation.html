@@ -40,8 +40,8 @@
     <main>
       <section class="banner">
         <div class="banner-content"><i class="flaticon-cutlery banner-logo"></i>
-          <h1 class="banner-heading">Delicious Specialties</h1>
-          <p class="banner-p"> <a class="banner-link" href="#">Home </a><span>Specialties</span></p>
+          <h1 class="banner-heading">Book a Table</h1>
+          <p class="banner-p"> <a class="banner-link" href="#">Home </a><span>Reservation</span></p>
           <div class="dark-bg"></div>
         </div>
       </section>
@@ -65,55 +65,29 @@
           <p class="info-p"> <a href="#">info@email.com	.</a></p>
         </div>
       </section>
-      <section class="specialties animated fadeIn"><span class="logo-specialties"><i class="flaticon-cutlery specialty-logo"></i></span>
-        <h2 class="section-heading">Our Specialities</h2>
-        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-        <div class="specialty-group">
-                <div class="specialty"><span class="price-tag">25$</span>
-                  <div class="s-icons"><span class="s-icon"><a href="#"><i class="icon-shopping-cart"></i></a></span><span class="s-icon"><a href="#"><i class="icon-search3"></i></a></span></div>
-                  <div class="specialty-img"><img src="images/dish-1.jpg"></div>
-                  <p class="specialty-dish">Luto Strawberry Dish</p>
-                </div>
-                <div class="specialty"><span class="price-tag">25$</span>
-                  <div class="s-icons"><span class="s-icon"><a href="#"><i class="icon-shopping-cart"></i></a></span><span class="s-icon"><a href="#"><i class="icon-search3"></i></a></span></div>
-                  <div class="specialty-img"><img src="images/dish-2.jpg"></div>
-                  <p class="specialty-dish">Pizza with Strawberries</p>
-                </div>
-                <div class="specialty"><span class="price-tag">25$</span>
-                  <div class="s-icons"><span class="s-icon"><a href="#"><i class="icon-shopping-cart"></i></a></span><span class="s-icon"><a href="#"><i class="icon-search3"></i></a></span></div>
-                  <div class="specialty-img"><img src="images/dish-3.jpg"></div>
-                  <p class="specialty-dish">Luto Grilled Beef</p>
-                </div>
-                <div class="specialty"><span class="price-tag">25$</span>
-                  <div class="s-icons"><span class="s-icon"><a href="#"><i class="icon-shopping-cart"></i></a></span><span class="s-icon"><a href="#"><i class="icon-search3"></i></a></span></div>
-                  <div class="specialty-img"><img src="images/dish-4.jpg"></div>
-                  <p class="specialty-dish">Luto Grilled Beef</p>
-                </div>
-                <div class="specialty"><span class="price-tag">25$</span>
-                  <div class="s-icons"><span class="s-icon"><a href="#"><i class="icon-shopping-cart"></i></a></span><span class="s-icon"><a href="#"><i class="icon-search3"></i></a></span></div>
-                  <div class="specialty-img"><img src="images/dish-5.jpg"></div>
-                  <p class="specialty-dish">Pizza with Strawberries</p>
-                </div>
-                <div class="specialty"><span class="price-tag">25$</span>
-                  <div class="s-icons"><span class="s-icon"><a href="#"><i class="icon-shopping-cart"></i></a></span><span class="s-icon"><a href="#"><i class="icon-search3"></i></a></span></div>
-                  <div class="specialty-img"><img src="images/dish-6.jpg"></div>
-                  <p class="specialty-dish">Luto Grilled Beef</p>
-                </div>
-                <div class="specialty"><span class="price-tag">25$</span>
-                  <div class="s-icons"><span class="s-icon"><a href="#"><i class="icon-shopping-cart"></i></a></span><span class="s-icon"><a href="#"><i class="icon-search3"></i></a></span></div>
-                  <div class="specialty-img"><img src="images/dish-7.jpg"></div>
-                  <p class="specialty-dish">Luto Strawberry Dish</p>
-                </div>
-                <div class="specialty"><span class="price-tag">25$</span>
-                  <div class="s-icons"><span class="s-icon"><a href="#"><i class="icon-shopping-cart"></i></a></span><span class="s-icon"><a href="#"><i class="icon-search3"></i></a></span></div>
-                  <div class="specialty-img"><img src="images/dish-8.jpg"></div>
-                  <p class="specialty-dish">Pizza with Strawberries</p>
-                </div>
-                <div class="specialty"><span class="price-tag">25$</span>
-                  <div class="s-icons"><span class="s-icon"><a href="#"><i class="icon-shopping-cart"></i></a></span><span class="s-icon"><a href="#"><i class="icon-search3"></i></a></span></div>
-                  <div class="specialty-img"><img src="images/dish-9.jpg"></div>
-                  <p class="specialty-dish">Luto Grilled Beef</p>
-                </div>
+      <section class="reservation-solo animated fadeIn">
+        <div class="reservation-content-solo">
+          <h2 class="reservation-heading-solo">Make A Reservation</h2>
+          <p>Cillum non enim eiusmod sint cupidatat enim. Sunt duis officia officia id dolore aliquip. </p>
+          <form class="form" action="#">
+            <div class="form-column">
+              <label for="name">Fullname</label>
+              <input id="name" placeholder="name" type="text">
+              <label for="tel">Phone</label>
+              <input id="tel" placeholder="phone" type="tel">
+              <label for="time">Time</label>
+              <input id="time" placeholder="6:30" type="time">
+            </div>
+            <div class="form-column">
+              <label>Email</label>
+              <input id="email" placeholder="email" type="email">
+              <label>Date</label>
+              <input placeholder="date" type="text" id="datepicker">
+              <label>Amount of People</label>
+              <input id="number-input" placeholder="1" type="number">
+            </div>
+            <button class="form-btn-solo">Book a Table</button>
+          </form>
         </div>
       </section>
     </main>
@@ -167,7 +141,6 @@
       const mobileToggle = document.querySelector(".nav-toggle");
       const headerNav = document.querySelector(".nav-menu");
       const navList = document.querySelector(".nav-list");
-      
       function toggleNav() {
         headerNav.classList.toggle("nav-active");
         mobileToggle.classList.toggle("toggle-height");
@@ -177,8 +150,8 @@
         mobileToggle.children[3].classList.toggle("turn-cross-3");
         if(mobileToggle.getAttribute("aria-expanded") === "false"
         && navList.getAttribute("aria-hidden") === "true") {
-            mobileToggle.setAttribute("aria-expanded", "true");
-            navList.setAttribute("aria-hidden", "false");
+          mobileToggle.setAttribute("aria-expanded", "true");
+          navList.setAttribute("aria-hidden", "false");
         } else {
             mobileToggle.setAttribute("aria-expanded", "false");
             navList.setAttribute("aria-hidden", "true");

@@ -9,11 +9,24 @@
   text-align: center;
 }
 
+.reservation-solo {
+  //padding-top: 3rem;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .reservation-content {
   color: $lighter;
   z-index: 2;
   position: relative;
   width: 80%;
+  margin: auto;
+}
+
+.reservation-content-solo {
+  color: unset;
+  width: 70%;
   margin: auto;
 }
 
@@ -37,6 +50,16 @@
 
 .form-column input::placeholder {
   color: rgba(255,255,255, 0.8);
+}
+
+.reservation-solo .form-column input  {
+  background-color: unset;
+  color: unset;
+  border: 2px solid #F0F0F0;
+}
+
+.reservation-solo .form-column input::placeholder {
+  color: $lighter;
 }
 
 @media screen and (min-width: 850px) {

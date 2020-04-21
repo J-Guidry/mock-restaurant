@@ -1,0 +1,84 @@
+
+extends ../partials/layout
+block content 
+  mixin specialty(img, name)
+    div.specialty
+      span.price-tag 25$
+      div.s-icons
+        span.s-icon
+          a(href="#")
+            i.icon-shopping-cart
+        span.s-icon
+          a(href="#")
+            i.icon-search3
+      div.specialty-img
+        img(src=img)
+      p.specialty-dish= name
+  section.banner
+    div.banner-content
+      i.flaticon-cutlery(class="banner-logo")
+      h1.banner-heading Delicious Specialties
+      p.banner-p 
+        a(href="#" class="banner-link") Home 
+        span Specialties
+      div.dark-bg
+  section.info
+    div(class="animated fadeIn")
+      i.icon-map4(class="info-icon")
+      h2.info-heading Address
+      p.info-p 198 West 21th Street, Suite 721 New York NY 10016
+    div(class="animated fadeIn")
+      i.icon-clock4(class="info-icon")
+      h2.info-heading Opening Time
+      p.info-p Monday - Sunday
+      p.info-p 8am - 9am
+    div(class="animated fadeIn")
+      i.icon-mobile2(class="info-icon")
+      h2.info-heading Phone
+      p.info-p 123-234-5678
+    div(class="animated fadeIn")
+      i.icon-envelope(class="info-icon")
+      h2.info-heading Email
+      p.info-p 
+        a(href="#") info@domain.com
+      p.info-p 
+        a(href="#") info@email.com	.
+  section.specialties(class="animated fadeIn")
+    span.logo-specialties
+      i.flaticon-cutlery(class="specialty-logo")
+    h2.section-heading Our Specialities
+    p Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life
+    div.specialty-group
+      +specialty("images/dish-1.jpg", "Luto Strawberry Dish")
+      +specialty("images/dish-2.jpg", "Pizza with Strawberries")
+      +specialty("images/dish-3.jpg", "Luto Grilled Beef")
+      +specialty("images/dish-4.jpg", "Luto Grilled Beef")
+      +specialty("images/dish-5.jpg", "Pizza with Strawberries")
+      +specialty("images/dish-6.jpg", "Luto Grilled Beef")
+      +specialty("images/dish-7.jpg", "Luto Strawberry Dish")
+      +specialty("images/dish-8.jpg", "Pizza with Strawberries")
+      +specialty("images/dish-9.jpg", "Luto Grilled Beef")
+
+block script
+  script.
+    const mobileToggle = document.querySelector(".nav-toggle");
+    const headerNav = document.querySelector(".nav-menu");
+    const navList = document.querySelector(".nav-list");
+
+    function toggleNav() {
+      headerNav.classList.toggle("nav-active");
+      mobileToggle.classList.toggle("toggle-height");
+      document.querySelector("body").classList.toggle("no-scroll");
+      mobileToggle.children[1].classList.toggle("turn-cross-1");
+      mobileToggle.children[2].classList.toggle("invisible");
+      mobileToggle.children[3].classList.toggle("turn-cross-3");
+      if(mobileToggle.getAttribute("aria-expanded") === "false"
+      && navList.getAttribute("aria-hidden") === "true") {
+          mobileToggle.setAttribute("aria-expanded", "true");
+          navList.setAttribute("aria-hidden", "false");
+      } else {
+          mobileToggle.setAttribute("aria-expanded", "false");
+          navList.setAttribute("aria-hidden", "true");
+      }
+    }
+    mobileToggle.addEventListener("click", toggleNav);
