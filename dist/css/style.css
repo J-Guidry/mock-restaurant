@@ -35,6 +35,11 @@ ul {
   list-style-type: none;
 }
 
+input, select {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .header {
   position: relative;
   z-index: 2;
@@ -313,6 +318,7 @@ footer h2 {
 
 .form-btn {
   padding: 10px 24px;
+  margin-top: 20px;
   background-color: #FF6107;
   border-radius: 25px;
   text-transform: uppercase;
@@ -325,6 +331,7 @@ footer h2 {
 
 .form-btn-solo {
   padding: 10px 24px;
+  margin-top: 20px;
   background-color: #FF6107;
   border-radius: 25px;
   text-transform: uppercase;
@@ -334,7 +341,7 @@ footer h2 {
   color: white;
   width: 200px;
   display: block;
-  margin: auto;
+  margin: 20px auto;
 }
 
 @media screen and (min-width: 800px) {
@@ -894,7 +901,8 @@ footer h2 {
   margin-bottom: 10px;
 }
 
-.form-column input {
+.form-column input,
+.form-column select {
   padding: 15px;
   padding-left: 10px;
   color: rgba(255, 255, 255, 0.8);
@@ -918,26 +926,27 @@ footer h2 {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.reservation-solo .form-column input {
+.reservation-solo .form-column input,
+.reservation-solo .form-column select {
   background-color: unset;
   color: unset;
   border: 2px solid #F0F0F0;
 }
 
 .reservation-solo .form-column input::-webkit-input-placeholder {
-  color: #FBFBFB;
+  color: rgba(180, 180, 180, 0.9);
 }
 
 .reservation-solo .form-column input:-ms-input-placeholder {
-  color: #FBFBFB;
+  color: rgba(180, 180, 180, 0.9);
 }
 
 .reservation-solo .form-column input::-ms-input-placeholder {
-  color: #FBFBFB;
+  color: rgba(180, 180, 180, 0.9);
 }
 
 .reservation-solo .form-column input::placeholder {
-  color: #FBFBFB;
+  color: rgba(180, 180, 180, 0.9);
 }
 
 @media screen and (min-width: 850px) {
@@ -951,6 +960,9 @@ footer h2 {
   .form-column label,
   .form-column input {
     display: block;
+    width: 80%;
+  }
+  .people {
     width: 80%;
   }
 }

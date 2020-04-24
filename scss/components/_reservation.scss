@@ -10,7 +10,6 @@
 }
 
 .reservation-solo {
-  //padding-top: 3rem;
   margin-top: 50px;
   text-align: center;
   margin-bottom: 20px;
@@ -40,7 +39,8 @@
   margin-bottom: 10px;
 }
 
-.form-column input {
+.form-column input,
+.form-column select {
   padding: 15px;
   padding-left: 10px;
   color: rgba(255,255,255, 0.8);
@@ -48,18 +48,21 @@
   border: 1px solid rgba(255,255,255, 0.2);
 }
 
+// .form-column select
+
 .form-column input::placeholder {
   color: rgba(255,255,255, 0.8);
 }
 
-.reservation-solo .form-column input  {
+.reservation-solo .form-column input,
+.reservation-solo .form-column select  {
   background-color: unset;
   color: unset;
   border: 2px solid #F0F0F0;
 }
 
 .reservation-solo .form-column input::placeholder {
-  color: $lighter;
+  color: rgba(180,180,180, 0.9);
 }
 
 @media screen and (min-width: 850px) {
@@ -72,8 +75,12 @@
   }
 
   .form-column label,
-  .form-column input {
+  .form-column input{
     display: block;
+    width: 80%;
+  }
+
+  .people {
     width: 80%;
   }
 }

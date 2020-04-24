@@ -83,8 +83,14 @@
               <input id="email" placeholder="email" type="email">
               <label>Date</label>
               <input placeholder="date" type="text" id="datepicker">
-              <label>Amount of People</label>
-              <input id="number-input" placeholder="1" type="number">
+              <label for="people">Amount of People</label>
+              <select class="people" id="people" placeholder="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5</option>
+              </select>
             </div>
             <button class="form-btn-solo">Book a Table</button>
           </form>
@@ -137,27 +143,6 @@
 </p>
       </section>
     </footer>
-    <script>
-      const mobileToggle = document.querySelector(".nav-toggle");
-      const headerNav = document.querySelector(".nav-menu");
-      const navList = document.querySelector(".nav-list");
-      function toggleNav() {
-        headerNav.classList.toggle("nav-active");
-        mobileToggle.classList.toggle("toggle-height");
-        document.querySelector("body").classList.toggle("no-scroll");
-        mobileToggle.children[1].classList.toggle("turn-cross-1");
-        mobileToggle.children[2].classList.toggle("invisible");
-        mobileToggle.children[3].classList.toggle("turn-cross-3");
-        if(mobileToggle.getAttribute("aria-expanded") === "false"
-        && navList.getAttribute("aria-hidden") === "true") {
-          mobileToggle.setAttribute("aria-expanded", "true");
-          navList.setAttribute("aria-hidden", "false");
-        } else {
-            mobileToggle.setAttribute("aria-expanded", "false");
-            navList.setAttribute("aria-hidden", "true");
-        }
-      }
-      mobileToggle.addEventListener("click", toggleNav);
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
