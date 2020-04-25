@@ -1,0 +1,59 @@
+extends ../partials/layout.pug
+block content
+  mixin post(img)
+    div.blog-post
+      div.group-img
+        img(src=img)
+      article.post
+        div.post-info
+          div.post-date
+            span.post-day 7
+            span.post-month May
+          div.author-title
+            span.author
+              span Posted by:
+              span.author-name Noah Henderson
+            span.title how to cook this recipe
+        p.post-content Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life  
+  section.banner
+    div.banner-content
+      i.flaticon-cutlery(class="banner-logo")
+      h1.banner-heading Blog
+      p.banner-p 
+        a(href="#" class="banner-link") Home
+        span Blog
+      div.dark-bg
+  section.info
+    div(class="animated fadeIn")
+      i.icon-map4(class="info-icon")
+      h2.info-heading Address
+      p.info-p 198 West 21th Street, Suite 721 New York NY 10016
+    div(class="animated fadeIn")
+      i.icon-clock4(class="info-icon")
+      h2.info-heading Opening Time
+      p.info-p Monday - Sunday
+      p.info-p 8am - 9am
+    div(class="animated fadeIn")
+      i.icon-mobile2(class="info-icon")
+      h2.info-heading Phone
+      p.info-p 123-234-5678
+    div(class="animated fadeIn")
+      i.icon-envelope(class="info-icon")
+      h2.info-heading Email
+      p.info-p 
+        a(href="#") info@domain.com
+      p.info-p 
+        a(href="#") info@email.com	.
+  section.blog
+    h2.section-heading Read Our Blog
+    p.blog-p Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life
+    div.post-group
+      +post("images/blog-1.jpg")
+      +post("images/blog-2.jpg")
+      +post("images/blog-3.jpg")
+      +post("images/blog-4.jpg")
+      +post("images/blog-5.jpg")
+      +post("images/blog-6.jpg")
+
+block script
+  script(src="js/main.js")

@@ -1,0 +1,96 @@
+.blog {
+  margin: 30px 0;
+}
+.post-group {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.post {
+  width: 315px;
+}
+
+.blog-post {
+  margin: auto;
+  width: 315px;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-date {
+  background-color: $black;
+  color: white;
+  width: 50px;
+  height: 80px;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 0 5px;
+}
+
+.post-month,
+.post-day {
+  display: block;
+  width: 30px;
+  padding: 5px 9px;
+  text-align: center;
+}
+
+.post-day {
+  border-bottom: 1px solid $primary;
+}
+
+.author-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.author {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.author-name {
+  margin-left: 4px;
+}
+
+.title {
+  margin-top: 15px;
+  display: inline-block;
+  font-family: $font-secondary;
+  color: $darker;
+  font-size: 20px;
+}
+
+
+
+@media screen and (min-width: 950px) {
+  .post-info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .post-content {
+    margin-left: auto;
+    width: 77%;
+  }
+
+  .post-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+  }
+
+  .blog-post {
+    width: 315px;
+    margin: 20px;
+  }
+
+}
