@@ -1,0 +1,63 @@
+extends ../partials/layout
+block content
+  section.banner
+    div.banner-content
+      i.flaticon-cutlery(class="banner-logo")
+      h1.banner-heading About Us
+      p.banner-p 
+        a(href="#" class="banner-link") Home 
+        span Contact
+      div.dark-bg
+  section.info
+    div(class="animated fadeIn")
+      i.icon-map4(class="info-icon")
+      h2.info-heading Address
+      p.info-p 198 West 21th Street, Suite 721 New York NY 10016
+    div(class="animated fadeIn")
+      i.icon-clock4(class="info-icon")
+      h2.info-heading Opening Time
+      p.info-p Monday - Sunday
+      p.info-p 8am - 9am
+    div(class="animated fadeIn")
+      i.icon-mobile2(class="info-icon")
+      h2.info-heading Phone
+      p.info-p 123-234-5678
+    div(class="animated fadeIn")
+      i.icon-envelope(class="info-icon")
+      h2.info-heading Email
+      p.info-p 
+        a(href="#") info@domain.com
+      p.info-p 
+        a(href="#") info@email.com	.
+  section.contact-section
+    h2.section-heading Contact Us
+    p.section-p Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life
+    div.contact
+      div.contact-info
+        h3 My Address
+        div.address
+          span.contact-icon
+            i.icon-map5
+          span.section-p 88 West 21th Street, Suite 721 New York NY 10016
+        div.contact-number
+          span.contact-icon
+            i.icon-phone4
+          span.section-p (123) 235 5498
+        div.email
+          span.contact-icon
+            i.icon-envelope2
+          a.contact-link(href="#") info@yoursite.com 
+        div.site
+          span.contact-icon
+            i.icon-globe3
+          a.contact-link(href="#") www.yoursite.com
+      form.contact-form(action="#")
+        div.message
+          textarea(placeholder="Message" cols="49" rows="7")
+        div.contact-name-fields
+          input(type="text" placeholder="name")
+          input(type="email" placeholder="email")
+        button.form-btn-solo send message
+
+block script
+  script(src="js/main.js")
