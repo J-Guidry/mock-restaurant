@@ -371,7 +371,7 @@ footer h2 {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.blog-p {
+.section-p {
   text-align: center;
 }
 
@@ -379,7 +379,8 @@ footer h2 {
   font-size: 22px;
 }
 
-.menu-p {
+.menu-p,
+.section-p {
   width: 80%;
   margin: auto;
   margin-bottom: 15px;
@@ -394,7 +395,8 @@ footer h2 {
 }
 
 @media screen and (min-width: 950px) {
-  .menu-p {
+  .menu-p,
+  .section-p {
     width: 60%;
     margin: 10px auto;
   }
@@ -403,7 +405,8 @@ footer h2 {
   }
 }
 
-.blog .group-img {
+.blog .group-img,
+.chef .group-img {
   width: 85%;
 }
 
@@ -414,7 +417,14 @@ footer h2 {
   z-index: -1;
 }
 
-.blog .group-img::after {
+.chef .group-img {
+  width: 200px;
+  height: 300px;
+  z-index: -1;
+}
+
+.blog .group-img::after,
+.chef .group-img::after {
   display: block;
   content: '';
   padding-bottom: 56.25%;
@@ -426,6 +436,10 @@ footer h2 {
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.chef .group-img img {
+  height: 300px;
 }
 
 @media screen and (min-width: 950px) {
@@ -566,6 +580,39 @@ footer h2 {
   height: 700px;
 }
 
+.chefs {
+  margin: 20px 0;
+}
+
+.chef-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chef-name, .chef-title {
+  text-align: center;
+}
+
+.chef-name {
+  margin-bottom: 5px;
+}
+
+.chef-title {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
 @media screen and (min-width: 800px) {
   .info {
     display: -webkit-box;
@@ -575,6 +622,21 @@ footer h2 {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .chef-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: auto;
+    width: 80%;
   }
 }
 

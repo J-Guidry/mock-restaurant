@@ -25,15 +25,50 @@
   height: 700px;
 }
 
+.chefs {
+  margin: 20px 0;
+}
+
+.chef-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chef-name, .chef-title {
+  text-align: center;
+}
+
+.chef-name {
+  margin-bottom: 5px;
+}
+
+.chef-title {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+
 @media screen and (min-width: 800px) {
   .info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
+  .chef-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 950px) {
+
   .about {
     display: flex;
     width: 80%;

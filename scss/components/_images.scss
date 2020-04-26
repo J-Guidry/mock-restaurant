@@ -1,4 +1,5 @@
-.blog .group-img {
+.blog .group-img,
+.chef .group-img {
   width: 85%;
 }
 
@@ -9,7 +10,14 @@
   z-index: -1;
 }
 
-.blog .group-img::after {
+.chef .group-img {
+  width: 200px;
+  height: 300px;
+  z-index: -1;
+}
+
+.blog .group-img::after,
+.chef .group-img::after {
   display: block;
   content: '';
   padding-bottom: 56.25%;
@@ -21,6 +29,10 @@
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.chef .group-img img {
+  height: 300px;
 }
 
 

@@ -8,7 +8,7 @@
   color: rgba(255,255,255, 0.6);
 }
 
-.blog-p {
+.section-p {
   text-align: center;
 }
 
@@ -16,7 +16,8 @@
   font-size: 22px;
 }
 
-.menu-p {
+.menu-p,
+.section-p {
   width: 80%;
   margin: auto;
   margin-bottom: 15px;
@@ -31,7 +32,8 @@
 }
 
 @media screen and (min-width: 950px) {
-  .menu-p {
+  .menu-p,
+  .section-p {
     width: 60%;
     margin: 10px auto;
   }
