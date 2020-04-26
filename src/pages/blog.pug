@@ -2,8 +2,9 @@ extends ../partials/layout.pug
 block content
   mixin post(img)
     div.blog-post
-      div.group-img
-        img(src=img)
+      a.post-link(href="#")
+        div.group-img
+          img(src=img)
       article.post
         div.post-info
           div.post-date

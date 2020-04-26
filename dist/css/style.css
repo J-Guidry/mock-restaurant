@@ -1220,6 +1220,19 @@ footer h2 {
   margin-right: 15px;
 }
 
+.message textarea {
+  width: 93%;
+}
+
+@media screen and (max-width: 880px) {
+  .contact-name-fields {
+    width: 90%;
+  }
+  .message textarea {
+    width: 86%;
+  }
+}
+
 .contact-name-fields {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1396,7 +1409,7 @@ footer {
   display: block;
   padding: 10px;
   padding-right: 0;
-  width: 224px;
+  width: 200px;
 }
 
 .copyright {
