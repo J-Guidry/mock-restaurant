@@ -36,18 +36,18 @@ block content
       form(action="#" class="form")
         div.form-column
           label(for="name") Fullname
-          input#name(placeholder="name" type="text")
+          input#name(placeholder="name" type="text" required)
           label(for="tel") Phone
-          input(id="tel" placeholder="phone" type="tel")
+          input(id="tel" placeholder="phone" type="tel" required)
           label(for="time") Time
-          input(id="time" placeholder="6:30" type="time")
+          input(id="time" placeholder="6:30" type="time" required)
         div.form-column
           label Email
-          input(id="email" placeholder="email" type="email")
+          input(id="email" placeholder="email" type="email" required)
           label Date
-          input(placeholder="date" type="text" id="datepicker")
+          input(placeholder="date" type="text" id="datepicker" required)
           label(for="people") Amount of People
-          select(id="people" class="people" placeholder="1")
+          select(id="people" class="people" placeholder="1" required)
             option(value="1") 1
             option(value="2") 2
             option(value="3") 3
