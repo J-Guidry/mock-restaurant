@@ -1,3 +1,3 @@
 # Mock Restaurant
 
-This is a mock five page restaurant.
+This is a mock seven page restaurant.
