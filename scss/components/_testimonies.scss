@@ -11,9 +11,15 @@
   padding-bottom: 3rem;
 }
 
-.client-slider {
+.testimonies .quotes p,
+.testimonies .quotes blockquote {
+  color: white;
+}
+
+.quotes {
   width: 80%;
   margin: auto;
+  color: white;
 }
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
@@ -23,7 +29,7 @@
 }
 
 @media screen and (min-width: 950px) {
-  .client-slider {
+  .quotes {
     width: 60%;
   }
 

@@ -1,5 +1,5 @@
 {
-  "name": "luto-colorlib-recoded",
+  "name": "mock-restaurant",
   "version": "1.0.0",
   "description": "Recoded from scratch restaurant web template ",
   "main": "index.js",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/J-Guidry/luto-colorlib-recoded.git"
+    "url": "git+https://github.com/J-Guidry/mock-restaurant.git"
   },
   "author": "Jhabari Guidry",
   "bugs": {
-    "url": "https://github.com/J-Guidry/luto-colorlib-recoded/issues"
+    "url": "https://github.com/J-Guidry/mock-restaurant/issues"
   },
-  "homepage": "https://github.com/J-Guidry/luto-colorlib-recoded#readme",
+  "homepage": "https://github.com/J-Guidry/mock-restaurant#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "moment": "^2.24.0",
-    "pikaday": "^1.8.0",
-    "tiny-slider": "^2.9.2"
+    "pikaday": "^1.8.0"
   }
 }
